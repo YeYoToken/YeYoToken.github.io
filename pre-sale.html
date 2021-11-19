@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Get YEYO : Token Pre-Sale</title>
+
+    <!-- Favicons -->
+    <link href="assets/img/favicon.png" rel="icon">
+    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+  
+    <!-- Vendor CSS Files -->
+    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  
+    <!-- Template Main CSS File -->
+    <link href="assets/css/style.css" rel="stylesheet">
+    
+  <script>
+    var test = true; // False if contracts are on Mainnet
+    var contractAddressSale = '0xCe3D2D2616904E613E5EaFFFF3b90f76c10eB672';
+    var contractAddressToken = '0x1112DABE15Dd01bEbc599Ea1680d9AEceAC4F791';
+  </script>
+
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Roboto:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top header-inner-pages">
+    <div class="container d-flex align-items-center justify-content-between">
+      <h1 class="logo"><a href="index.html">YEYO</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="index.html">Home</a></li>
+          <li><a class="nav-link scrollto" href="index.html#about">Pre-Sale Details</a></li>
+          <li><a class="nav-link scrollto" href="index.html#services">Token Specs</a></li>
+          <li><a class="nav-link scrollto" href="index.html#features">Features</a></li>
+          <li><a class="nav-link scrollto" href="index.html#testimonials">Testimonials</a></li>
+          <li><a class="nav-link scrollto" href="index.html#faq">FAQ's</a></li>
+          <li><a class="nav-link scrollto" href="index.html#contact">Contact</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+    <section class="connect">
+      <div class="container">
+        <div class="section-title">
+          <h2>Sale Data</h2>
+        </div>
+        <div class="row mb-5">
+          <div class="col-lg-6 order-1 order-lg-1 content">
+            <h4>Get Ready:</h4>
+            <div>
+              <p>Install or setup wallet to connect to Binance Smart Chain (BSC)</p>
+              <p>How to set up Trust Wallet <a target="_blank" href="https://www.binance.com/en/blog/ecosystem/how-to-set-up-and-use-trust-wallet-for-binance-smart-chain-421499824684901157"> here</a></p>
+              <p>- or -</p>
+              <p>How to set up Metamask <a target="_blank" href="https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain"> here</a></p>
+            </div>
+            <div>
+             
+              <p class="err">Do not send BNB to the token contract!</p>
+              <h6><span id="tokenName">YeYo Token</span> (<span class="tokenSymbol">YEYO</span>)</h6>
+              <p><a target="_blank" href="https://testnet.bscscan.com/token/0x1112DABE15Dd01bEbc599Ea1680d9AEceAC4F791" id="tokenAddress">0x1112DABE15Dd01bEbc599Ea1680d9AEceAC4F791</a></p>
+              <!-- Reserved in case you want to show decimals and total supply: Decimals <span id="#tokenDecimals"></span> Total supply <span id="#tokenSupply"></span>-->
+              <button id="addToken" class="btn btn-outline-primary text-uppercase">Add to Metamask</button> 
+              <button id="copyToken" class="btn btn-outline-primary text-uppercase">Copy address</button>
+            </div>
+          </div>
+
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-2 content">
+            <h4>Connect to Network:</h4>
+            <div>
+              <button id="connect" type="button" class="btn btn-outline-primary text-uppercase"">Connect</button> 
+              <button class="btn btn-outline-primary text-uppercase switch" id="addTestBSC">To BSC Testnet</button>
+              <p>
+                <span id="nometamask" class="err" style="display: none">Please install Metamask first...</span>
+              </p>
+              <div class="network small">
+                <p><span id="curnet"></span></p>
+                <p></p><span class="err">Please use DApp browser/extension (e.g. <a target="_blank" href="https://metamask.io">Metamask</a>)</span></span> 
+                <p><span id="myAddr"></span></p>
+                <span id="referred" style="display:none"><br>Referrer: <span id="referrer"></span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <h4>Token Sale Status</h4>
+          <h6>
+          <span id="finished" style="display:none" class="status green">Finished</span>
+          <span id="addtokens" style="display:none" class="status err">Ask token sale admin to approve token sale contract or check tokens balance on the wallet!<br></span>
+          <span id="active" style="display:none" class="status err">Active:</span>
+          <span id="paused" style="display:none" class="status err">Paused</span>
+          <span id="upcoming" style="display:none" class="status blue">Upcoming</span>
+          <span id="upcomingtimer" style="display:none" class="status">Sale begins in <span id="starttimer"></span></span> 
+          <span id="activetimer" style="display:none" class="status green">Sale ends in <span id="endtimer"></span></span> 
+          </h6>
+          <progress id="progress" value="0" max="100" style="height: 40px;"></progress>
+        </div>
+      </div>
+    </section>
+
+    <section class="inner-page services section-bg">
+      <div class="container">
+        <div class="section-title">
+          <h2>How To Buy Your $YEYO</h2>
+        </div>
+
+        <div class="row gy-4">
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+            <div class="icon-box iconbox-pink">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
+                </svg>
+                <i class="bx bx-qr-scan"></i>
+              </div>
+              <h4 class="text-uppercase">Sale Contract</h4>
+              <p class="p-2">
+                You can buy YEYO tokens by sending BNB(BEP20) tokens directly from your wallet to this contract. Tokens are delivered immediatly to your wallet.
+              </p>
+              <a href="https://testnet.bscscan.com/address/0x854ffF3B592385f7d16565118724917134ceF9dc" target="_blank" id="saleAddress">0x854ffF3B592385f7d16565118724917134ceF9dc</a>  
+              <button id="copySale" type="button" class="btn btn-outline-primary m-3 text-uppercase"">Copy Address</button>
+              <div id="saleqr"></div>
+              <p class="p-2">
+                *Please increase gas limit to 200,000 or even more for tokens with special functions like autoLP, 
+                swaps, etc.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-box iconbox-pink">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
+                </svg>
+                <i class="bx bx-money"></i>
+              </div>
+              <h4 class="text-uppercase">Buy tokens</h4>
+              <p class="p-2">1 BNB = <span class="rate"></span> <span class="tokenSymbol">YEYO</span></p>
+              <p class="p-2">Tokens are delivered immediatly to your wallet when transaction is confirmed by blockchain.</p>
+              <div class="input-group mb-3">
+                <input type="number" id="buyAmount" value="0" min="0" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <div class="input-group-append">
+                  <span class="input-group-text" id="basic-addon2">BNB</span>
+                </div>
+              </div>
+
+              <p class="p-2">You get: <span id="get">0</span> <span class="tokenSymbol">YEYO</span></p>
+              <button id="buyBtn" type="button" class="btn btn-danger m-3 text-uppercase">Buy</button>
+              <p class="p-2">You have contributed <span id="mySpendings">?</span> of <span class="max">?</span> BNB maximum purchase limit, 
+              can spend max. <span id="myRemaining">?</span> BNB more</p>
+              <p class="p-2">In my wallet: <span id="myTokens"></span> <span class="tokenSymbol">YEYO</span></p>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+            <div class="icon-box iconbox-pink">
+              <div class="icon">
+                <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
+                  <path stroke="none" stroke-width="0" fill="#f5f5f5" d="M300,541.5067337569781C382.14930387511276,545.0595476570109,479.8736841581634,548.3450877840088,526.4010558755058,480.5488172755941C571.5218469581645,414.80211281144784,517.5187510058486,332.0715597781072,496.52539010469104,255.14436215662573C477.37192572678356,184.95920475031193,473.57363656557914,105.61284051026155,413.0603344069578,65.22779650032875C343.27470386102294,18.654635553484475,251.2091493199835,5.337323636656869,175.0934190732945,40.62881213300186C97.87086631185822,76.43348514350839,51.98124368387456,156.15599469081315,36.44837278890362,239.84606092416172C21.716077023791087,319.22268207091537,43.775223500013084,401.1760424656574,96.891909868211,461.97329694683043C147.22146801428983,519.5804099606455,223.5754009179313,538.201503339737,300,541.5067337569781"></path>
+                </svg>
+                <i class="bx bx-group"></i>
+              </div>
+              <div id="refarea" >
+                <h4 class="text-uppercase">Referral program</h4>
+                <p class="p-3">Share your referral link or QR code and get commission for referred YEYO token purchases paid in BNB instantly to your wallet.</p>
+                <p class="p-1">Total paid to referrers: <span id="refTotal"></span> BNB</p>
+                <p class="p-1">Referral commission: <span id="refPercent">10</span>%</p>
+                <p class="p-1">Your referral earnings: <span id="refMy"></span> BNB</p> 
+
+                <div class="input-group mt-3">
+                  <input type="text" class="form-control" id="referLink" size="70" readonly="true">
+                  <div class="input-group-append">
+                    <button id="copyreflink" class="btn btn-outline-primary text-uppercase" type="button">Copy Link</button>
+                  </div>
+                </div>
+
+                <div id="refqrcode">
+                    <div id="refqr"></div>
+                </div>
+                <p id="refErr" class="err" style="display: none">Please connect your wallet on Binance Smart Chain to generate your referral link!</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact section">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Join Our Cartel</h2>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-4">
+            <div class="info-box mb-4">
+              <i class="bx bxl-twitter"></i>
+              <h3>Tweet Us</h3>
+              <a href="https://twitter.com/YeyoToken">@YeyoToken</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bx-envelope"></i>
+              <h3>Email Us</h3>
+              <a href="mailto:getyeyo@protonmail.com">getyeyo@protonmail.com</a>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6">
+            <div class="info-box  mb-4">
+              <i class="bx bxl-telegram"></i>
+              <h3>Telegram</h3>
+              <a href="https://t.me/getyeyo">t.me/getyeyo</a>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Contact Section -->
+  </main><!-- End #main -->
+
+
+<!-- ======= Footer ======= -->
+<footer id="footer">
+
+  <div class="footer-top">
+    <div class="container">
+      <div class="row">
+
+        <div class="col-lg-6 col-md-6 footer-contact">
+          <h3>YEYO</h3>
+          <p>Remember, this is all just for fun, you really can't take this all too serious.</p>
+          <div>
+            <p>
+              No animals have been hurt in the process.
+            </p>
+          </div>
+
+          <p>
+            <strong>Email:</strong> getyeyo@protonmail.com<br>
+          </p>
+        </div>
+
+        <div class="col-lg-2 col-md-6 footer-links">
+        </div>
+
+        <div class="col-lg-3 col-md-6 footer-links">
+        </div>
+
+        <div class="col-lg-4 col-md-6 footer-newsletter">
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="container">
+
+    <div class="copyright-wrap d-md-flex py-4">
+      <div class="me-md-auto text-center text-md-start">
+        <div class="copyright">
+          &copy; Copyright <strong><span>YEYO | The King of Narco Meme Tokens</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          Designed by <a href="">ThinDiesel</a>
+        </div>
+      </div>
+      <div class="social-links text-center text-md-right pt-3 pt-md-0">
+        <a href="https://twitter.com/YeyoToken" class="twitter"><i class="bx bxl-twitter"></i></a>
+        <a href="https://t.me/getyeyo" class="telegram"><i class="bx bxl-telegram"></i></a>
+      </div>
+    </div>
+
+  </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/purecounter/purecounter.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src='https://dappbuilder.org/js/jquery-3.6.0.min.js' type="text/javascript" charset="utf-8"></script>
+<script src='https://dappbuilder.org/js/ethers-5.0.umd.min.js' type="text/javascript" charset="utf-8"></script>
+<script src='https://dappbuilder.org/bsc/tokensaletimerefadm/js/tokensale.ui.js' type="text/javascript" charset="utf-8"></script>
+
+</body>
+
+</html>

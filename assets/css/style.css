@@ -1421,3 +1421,51 @@ section {
   color: #fff;
   text-decoration: none;
 }
+
+.btn-outline-primary {
+  color: #5846f9 !important;
+  border-color: #5846f9 !important;
+}
+
+.btn-outline-primary:hover {
+  color: #fff !important;
+  border-color: #5846f9 !important;
+  background-color: #5846f9 !important;
+}
+
+button#buyBtn.btn.btn-danger {
+  width: 75% !important;
+  background-color: #e80368 !important;
+  border-color: #e80368 !important;
+}
+
+button#buyBtn.btn.btn-danger:disabled {
+  width: 75% !important;
+  background-color: #e80368 !important;
+  border-color: #e80368 !important;
+}
+
+a#saleAddress {
+  font-size: .7em;
+}
+
+.err {
+  color: #e80368;
+}
+
+.connect {
+  padding-top: 100px;
+  padding-bottom: 40px;
+}
+
+.inner-page {
+  padding-top: 60px !important;
+}
+
+#hero p{
+  color: #fff !important;
+}
+
+.bg-success{
+  color: #e80368;
+}

@@ -83,57 +83,85 @@
     <section class="connect">
       <div class="container">
         <div class="section-title">
-          <h2>Sale Data</h2>
+          <h2>How To Buy $YEYO</h2>
         </div>
         <div class="row mb-5">
-          <div class="col-lg-6 order-1 order-lg-1 content">
-            <h4>Get Ready:</h4>
+          <div class="col-lg-6 order-2 order-lg-2 content">
+            <h4><i class="bi bi-check-circle"></i>  Step 2: Set Up Wallet</h4>
             <div>
-              <p>Install or setup wallet to connect to Binance Smart Chain (BSC)</p>
-              <p>How to set up Trust Wallet <a target="_blank" href="https://www.binance.com/en/blog/ecosystem/how-to-set-up-and-use-trust-wallet-for-binance-smart-chain-421499824684901157"> here</a></p>
-              <p>- or -</p>
-              <p>How to set up Metamask <a target="_blank" href="https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain"> here</a></p>
-            </div>
-            <div>
-             
-              <p class="err">Do not send BNB to the token contract!</p>
-              <h6><span id="tokenName">YeYo Token</span> (<span class="tokenSymbol">YEYO</span>)</h6>
-              <p><a target="_blank" href="https://testnet.bscscan.com/token/0x1112DABE15Dd01bEbc599Ea1680d9AEceAC4F791" id="tokenAddress">0x1112DABE15Dd01bEbc599Ea1680d9AEceAC4F791</a></p>
-              <!-- Reserved in case you want to show decimals and total supply: Decimals <span id="#tokenDecimals"></span> Total supply <span id="#tokenSupply"></span>-->
-              <button id="addToken" class="btn btn-outline-primary text-uppercase">Add to Metamask</button> 
-              <button id="copyToken" class="btn btn-outline-primary text-uppercase">Copy address</button>
+              <p><b>Install or setup wallet to connect to Binance Smart Chain (BSC)</b><br>
+                <div>
+                  <p><i class="bx bxs-right-arrow-alt"></i> Set up Trust Wallet <a target="_blank" href="https://www.binance.com/en/blog/ecosystem/how-to-set-up-and-use-trust-wallet-for-binance-smart-chain-421499824684901157"> here</a></p>
+                  <p><i class="bx bxs-right-arrow-alt"></i> Set up Metamask <a target="_blank" href="https://academy.binance.com/en/articles/connecting-metamask-to-binance-smart-chain"> here</a></p>
+                  <br>
+                </div>
             </div>
           </div>
 
-          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-2 content">
-            <h4>Connect to Network:</h4>
-            <div>
-              <button id="connect" type="button" class="btn btn-outline-primary text-uppercase"">Connect</button> 
-              <button class="btn btn-outline-primary text-uppercase switch" id="addTestBSC">To BSC Testnet</button>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-1 order-lg-1 content">
+            <h4><i class="bi bi-check-circle"></i> Step 1: Connect to Network:</h4>
+            <div style="margin-left: 25px;">
+              <p><span class="err">Please use DApp browser/extension (e.g. <a target="_blank" href="https://metamask.io">Metamask</a>)</span></p>
+              <!-- <button id="connect" type="button" class="btn btn-outline-primary text-uppercase"">Connect</button>  -->
+              <button class="btn btn-outline-primary text-uppercase switch" id="addTestBSC">Connect To BSC Testnet</button>
               <p>
                 <span id="nometamask" class="err" style="display: none">Please install Metamask first...</span>
               </p>
               <div class="network small">
-                <p><span id="curnet"></span></p>
-                <p></p><span class="err">Please use DApp browser/extension (e.g. <a target="_blank" href="https://metamask.io">Metamask</a>)</span></span> 
-                <p><span id="myAddr"></span></p>
+                <!-- <p><span class="err">Please use DApp browser/extension (e.g. <a target="_blank" href="https://metamask.io">Metamask</a>)</span></p> -->
+                <p><b>Connected to:</b> <span id="curnet"></span></p>
+                <p><b>Your wallet address:</b> <span id="myAddr"></span></p>
                 <span id="referred" style="display:none"><br>Referrer: <span id="referrer"></span></span>
               </div>
             </div>
           </div>
         </div>
-        <div class="row">
-          <h4>Token Sale Status</h4>
-          <h6>
-          <span id="finished" style="display:none" class="status green">Finished</span>
-          <span id="addtokens" style="display:none" class="status err">Ask token sale admin to approve token sale contract or check tokens balance on the wallet!<br></span>
-          <span id="active" style="display:none" class="status err">Active:</span>
-          <span id="paused" style="display:none" class="status err">Paused</span>
-          <span id="upcoming" style="display:none" class="status blue">Upcoming</span>
-          <span id="upcomingtimer" style="display:none" class="status">Sale begins in <span id="starttimer"></span></span> 
-          <span id="activetimer" style="display:none" class="status green">Sale ends in <span id="endtimer"></span></span> 
-          </h6>
-          <progress id="progress" value="0" max="100" style="height: 40px;"></progress>
+        <div class="row mb-5">
+          <div class="col-lg-6 order-2 order-lg-2 content">
+            <h4><i class="bi bi-check-circle"></i> Step 3: Buy Some $YEYO</h4>
+            <div style="margin-left: 25px;">
+              <p><b>You have two options below:</b></p>
+
+                <p><i class="bx bxs-right-arrow-alt"></i> Send BNB directly to Sale Contract Address (0.00001 BNB = 1 YEYO)</p>
+                <p><i class="bx bxs-right-arrow-alt"></i> Use the "Buy Tokens" interface to make purchase directly</p>
+
+              <p>Tokens will be transferred immediatly to your wallet after purchase</p>
+              <p class="err"><b>Grab your referral link / QR code below</a> earn 5% from every sale!</b></p>
+            </div>
+          </div>
+          <div class="col-lg-6 order-2 order-lg-2 content">
+            <h4><i class="bi bi-check-circle"></i>  Step 4: Add Token To Wallet</h4>
+            <div>
+              <p><b>Add Token to your Wallet</b></p>
+              <div>
+                <p class="err">Warning - Never send BNB directly to the token contract!</p>
+                <h6><span id="tokenName">YeYo Token</span> (<span class="tokenSymbol">YEYO</span>)</h6>
+                <p><a target="_blank" href="https://testnet.bscscan.com/token/0x1112DABE15Dd01bEbc599Ea1680d9AEceAC4F791" id="tokenAddress">0x1112DABE15Dd01bEbc599Ea1680d9AEceAC4F791</a></p>
+                <!-- Reserved in case you want to show decimals and total supply: Decimals <span id="#tokenDecimals"></span> Total supply <span id="#tokenSupply"></span>-->
+              </div>
+              <button id="addToken" class="btn btn-outline-primary text-uppercase">Add to Metamask</button> 
+              <button id="copyToken" class="btn btn-outline-primary text-uppercase">Copy Address</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq">
+      <div class="container">
+
+        <div class="row section-title">
+          <h2>Token Sale Status</h2>
+            <h3>
+            <span id="finished" style="display:none" class="status err">Finished</span>
+            <span id="addtokens" style="display:none" class="status err">Ask token sale admin to approve token sale contract or check tokens balance on the wallet!<br></span>
+            <span id="active" style="display:none" class="status err">Active:</span>
+            <span id="paused" style="display:none" class="status err">Paused</span>
+            <span id="upcoming" style="display:none" class="status go">Upcoming</span>
+            <span id="upcomingtimer" style="display:none" class="status go">Sale begins in <span id="starttimer"></span></span> 
+            <span id="activetimer" style="display:none" class="status go">Sale ends in <span id="endtimer"></span></span> 
+            </h3>
+            <progress id="progress" value="0" max="100" style="height: 40px;"></progress>
         </div>
       </div>
     </section>
@@ -141,11 +169,11 @@
     <section class="inner-page services section-bg">
       <div class="container">
         <div class="section-title">
-          <h2>How To Buy Your $YEYO</h2>
+          <h2>Get That $YEYO</h2>
         </div>
 
         <div class="row gy-4">
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
+          <div class="col-lg-6 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="200">
             <div class="icon-box iconbox-pink">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -155,7 +183,7 @@
               </div>
               <h4 class="text-uppercase">Sale Contract</h4>
               <p class="p-2">
-                You can buy YEYO tokens by sending BNB(BEP20) tokens directly from your wallet to this contract. Tokens are delivered immediatly to your wallet.
+                You can buy YEYO tokens by sending BNB(BEP20) tokens directly from your wallet to this sale contract. Tokens are delivered immediatly to your wallet after purchase.
               </p>
               <a href="https://testnet.bscscan.com/address/0x854ffF3B592385f7d16565118724917134ceF9dc" target="_blank" id="saleAddress">0x854ffF3B592385f7d16565118724917134ceF9dc</a>  
               <button id="copySale" type="button" class="btn btn-outline-primary m-3 text-uppercase"">Copy Address</button>
@@ -167,7 +195,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-6 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
             <div class="icon-box iconbox-pink">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -176,8 +204,8 @@
                 <i class="bx bx-money"></i>
               </div>
               <h4 class="text-uppercase">Buy tokens</h4>
-              <p class="p-2">1 BNB = <span class="rate"></span> <span class="tokenSymbol">YEYO</span></p>
-              <p class="p-2">Tokens are delivered immediatly to your wallet when transaction is confirmed by blockchain.</p>
+              <h5 class="p-2">1 BNB = <span class="rate"></span> <span class="tokenSymbol">YEYO</span></h5>
+              <p class="p-2">Tokens are delivered immediatly to your wallet after purchase</p>
               <div class="input-group mb-3">
                 <input type="number" id="buyAmount" value="0" min="0" class="form-control" aria-label="Recipient's username" aria-describedby="basic-addon2">
                 <div class="input-group-append">
@@ -185,7 +213,7 @@
                 </div>
               </div>
 
-              <p class="p-2">You get: <span id="get">0</span> <span class="tokenSymbol">YEYO</span></p>
+              <h6 class="p-2">You get: <b class="err"><span id="get">0</span> <span class="tokenSymbol">YEYO</span></b></h6>
               <button id="buyBtn" type="button" class="btn btn-danger m-3 text-uppercase">Buy</button>
               <p class="p-2">You have contributed <span id="mySpendings">?</span> of <span class="max">?</span> BNB maximum purchase limit, 
               can spend max. <span id="myRemaining">?</span> BNB more</p>
@@ -193,7 +221,7 @@
             </div>
           </div>
 
-          <div class="col-lg-4 col-md-6 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="300">
+          <div id="share-code"" class="d-flex flex-column" data-aos="zoom-in" data-aos-delay="50">
             <div class="icon-box iconbox-pink">
               <div class="icon">
                 <svg width="100" height="100" viewBox="0 0 600 600" xmlns="http://www.w3.org/2000/svg">
@@ -203,12 +231,12 @@
               </div>
               <div id="refarea" >
                 <h4 class="text-uppercase">Referral program</h4>
-                <p class="p-3">Share your referral link or QR code and get commission for referred YEYO token purchases paid in BNB instantly to your wallet.</p>
-                <p class="p-1">Total paid to referrers: <span id="refTotal"></span> BNB</p>
-                <p class="p-1">Referral commission: <span id="refPercent">10</span>%</p>
-                <p class="p-1">Your referral earnings: <span id="refMy"></span> BNB</p> 
+                <h6 class="p-3">Share your referral link or QR code and get commission for referred YEYO token purchases paid in BNB instantly to your wallet.</h6>
+                <p class="p-1">Total paid to referrers: <b class="err"><span id="refTotal"></span> BNB</b></p>
+                <p class="p-1">Referral commission: <b class="err"><span id="refPercent">10</span>%</b></p>
+                <p class="p-1">Your referral earnings: <b class="err"><span id="refMy"></span> BNB</b></p> 
 
-                <div class="input-group mt-3">
+                <div id="sale-link-input" class="input-group mt-3">
                   <input type="text" class="form-control" id="referLink" size="70" readonly="true">
                   <div class="input-group-append">
                     <button id="copyreflink" class="btn btn-outline-primary text-uppercase" type="button">Copy Link</button>

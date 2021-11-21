@@ -1235,6 +1235,7 @@ section {
   }
 }
 
+
 /*--------------------------------------------------------------
 # Breadcrumbs
 --------------------------------------------------------------*/
@@ -1445,9 +1446,9 @@ button#buyBtn.btn.btn-danger:disabled {
   border-color: #e80368 !important;
 }
 
-a#saleAddress {
+/* a#saleAddress {
   font-size: .7em;
-}
+} */
 
 .err {
   color: #e80368;
@@ -1468,4 +1469,37 @@ a#saleAddress {
 
 .bg-success{
   color: #e80368;
+}
+
+#sale-link-input {
+  width: 60% !important;
+  margin: auto !important;
+  padding: 40px 0 40px 0;
+}
+
+.back-to-top {
+  background:#e80368;
+}
+
+.status.go {
+  color: #fff;
+}
+
+@media (max-width: 575px), (max-height: 600px) {
+  .mb-5 {
+    margin: 0 !important;
+  }
+  a#tokenAddress,#myAddr, #saleAddress {
+    font-size: .7rem !important;
+  }
+  #addToken, #copyToken {
+    width: auto;
+    margin: 10px 0;
+  }
+  #sale-link-input {
+    width: auto !important;
+  }
+  .section-title {
+    padding-bottom: 0px;
+  }
 }

@@ -26,9 +26,9 @@
     <link href="assets/css/style.css" rel="stylesheet">
     
   <script>
-    var test = true; // False if contracts are on Mainnet
-    var contractAddressSale = '0xCe3D2D2616904E613E5EaFFFF3b90f76c10eB672';
-    var contractAddressToken = '0x1112DABE15Dd01bEbc599Ea1680d9AEceAC4F791';
+    var test = false; // False if contracts are on Mainnet
+    var contractAddressSale = '0x184dCF241156cf45397989d88e4dd4DaD24d1f3E';
+    var contractAddressToken = '0x88E0983c227D5af07F4E05f1D7B31ee0ff23e57E';
   </script>
 
   <meta content="" name="description">
@@ -111,7 +111,7 @@
                 <!-- <p><span class="err">Please use DApp browser/extension (e.g. <a target="_blank" href="https://metamask.io">Metamask</a>)</span></p> -->
                 <p><b>Connected to:</b> <span id="curnet"></span></p>
                 <p><b>Your wallet address:</b> <span id="myAddr"></span></p>
-                <span id="referred" style="display:none"><br>Referrer: <span id="referrer"></span></span>
+                <span id="referred" style="display:none"><b>Referrer: </b><span id="referrer"></span></span>
               </div>
             </div>
           </div>
@@ -147,7 +147,7 @@
       </div>
     </section>
 
-    <section class="faq">
+    <section class="stats">
       <div class="container">
 
         <div class="row section-title">
@@ -189,8 +189,7 @@
               <button id="copySale" type="button" class="btn btn-outline-primary m-3 text-uppercase"">Copy Address</button>
               <div id="saleqr"></div>
               <p class="p-2">
-                *Please increase gas limit to 200,000 or even more for tokens with special functions like autoLP, 
-                swaps, etc.
+                * Please increase gas limit to 200,000 min
               </p>
             </div>
           </div>
@@ -215,9 +214,10 @@
 
               <h6 class="p-2">You get: <b class="err"><span id="get">0</span> <span class="tokenSymbol">YEYO</span></b></h6>
               <button id="buyBtn" type="button" class="btn btn-danger m-3 text-uppercase">Buy</button>
-              <p class="p-2">You have contributed <span id="mySpendings">?</span> of <span class="max">?</span> BNB maximum purchase limit, 
-              can spend max. <span id="myRemaining">?</span> BNB more</p>
-              <p class="p-2">In my wallet: <span id="myTokens"></span> <span class="tokenSymbol">YEYO</span></p>
+              <p class="p-2">You have contributed 
+                <b class="err"><span id="mySpendings">?</span></b> of <b class="err"><span class="max">?</span> BNB</b> max purchase limit,<br> 
+                you can spend max <b class="err"><span id="myRemaining">?</span> BNB</b> more</p>
+              <p class="p-2">In my wallet: <b class="err"><span id="myTokens"></span> <span class="tokenSymbol">YEYO</span></b></p>
             </div>
           </div>
 
